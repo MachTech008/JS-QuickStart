@@ -35,6 +35,7 @@
 | Push | or push refers to sending your committed changes to a remote repository such as Github.com. For example, if you change something locally, you'd want to then *push* those changes so that others may access them | `git push` |
 | Repository | is the most basic element of Github and can be thought of as a project's folder | |
 | Upstream | when talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream".| `git remote add upstream` |
+|Git Flow | GitFlow is a branching model for Git. New development is done on feature branches, and isolated from production until it is ready for release. It makes parallel development easier so is well-suited to team collaboration. | Step by step of a traditional Git Flow can be found [here](https://datasift.github.io/gitflow/IntroducingGitFlow.html). (For a comprehensive overview, see [this video](https://www.youtube.com/watch?v=6LhTe8Mz6jM)) |
 (*Source:https://help.github.com/articles/github-glossary/*)
 
 
