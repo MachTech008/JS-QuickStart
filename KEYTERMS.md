@@ -28,6 +28,7 @@
 | Fork | is a personal copy of another user's repository that lives on you account. A fork allows you to freely make changes to a project without affecting the original. It remains attached to the original, allowing you to submit a pull request to the original's author to update with you changes | *In the top-right corner of the page, click Fork.* ![ForK](https://help.github.com/assets/images/help/repository/fork_button.jpg)|
 | Git | is an open source program for tracking changes in text files. |
 | Merge | or merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a Pull Request (which can be thought of as a request to merge) | `git merge`|
+| Remote | refers to git branches that are not located on your local machine, but instead are available remotely |`git remote -v` lists the names and locations of your remotes|
 | Open Source | software that can be `freely used, modified, and shared (in both modified and unmodified form) by anyone`. The concept of "open source" is often extended beyond software, to represent a philosophy of collaboration in which working materials are made available online for anyone to fork, modify, discuss, and contribute to |
 | Organization | are a group of two or more users that typically mirror real-world organizations. They are administered by users and can contain both repositories and teams |
 | Private Repository | are repositories that can only be viewed or contributed to by their creator and collaborators the creator specified. |
