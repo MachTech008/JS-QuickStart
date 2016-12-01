@@ -41,6 +41,14 @@ This will fire up a plain windows command line (cmd.exe) as administrator
 | `git --version` | Ensures that the git command is recognized. You may want to restart the command prompt. Ensure you have access to your project's repository|
 | To work with [github] need to generate rsa keys and set public key (id_rsa.pub) in [github] (Dashboard -> Manage SSH keys). |  To run ssh-keygen command, you might have to run git-bash first (right clink on 'desktop' and select 'Git Bash Here' option).|
 
+Before you generate an SSH key, you can check to see if you have any existing SSH keys.
+Open Git Bash.
+Enter ls -al ~/.ssh to see if existing SSH keys are present:
+ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
+
+Check the directory listing to see if you already have a public SSH key.
+
 Note: If GitHub usage is blocked via git protocol, you will need to set it up to use https instead. Following command will do the trick:
 
 git config --global url."https://".insteadOf git://
