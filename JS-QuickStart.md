@@ -22,16 +22,27 @@ REQUIREMENTS
 
 | Command       | Result       |
 |:------------- |:-------------|
-| SET UP CHOCOLATEY | |
 | `@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin` | This should download and setup chocolatey using powershell. |
 | `choco --version` | Checks whether everything is working. You should see the current version of Chocolatey if the installation process finished successfully. |
-| INSTALL THE SOFTWARE| |
 | `cinst -y git & refreshenv` | Installs GIT |
 | `cinst -y php --ignore-checksums & refreshenv` | Installs PHP (ignore-checksum flag required since feature was only left in configuration because previous choco had it according to "https://github.com/chocolatey/choco/issues/112".) |
 | `cinst -y nodejs.install & refreshenv` | Installs nodejs |
 | `cinst -y vcredist2015 & refreshenv` | Installs vcredist2015 |
 | `git --version` | Ensures that the git command is recognized. You may want to restart the command prompt. Ensure you have access to your project's repository|
-| To work with [github] need to generate rsa keys and set public key (id_rsa.pub) in [github] (Dashboard -> Manage SSH keys). |  To run ssh-keygen command, you might have to run git-bash first (right clink on 'desktop' and select 'Git Bash Here' option).|
+|choco install conemu | Installs Console Emulator|
+
+5. Open the Console Emulator which is now installed on your Windows computer
+6. From the Dropdown, select Git bash and save.
+7. Set up a GitHub User account at https://github.com, or if already done, navigate to your account profile.
+
+8. Re-Open Console Emulator and run the commands below! First
+
+| Command       | Result       |
+|:------------- |:-------------|
+|`ls -al ~/.ssh` | Searches for existing SSH files|
+
+To work with [github] need to generate rsa keys and set public key (id_rsa.pub) in [github] (Dashboard -> Manage SSH keys).
+To run ssh-keygen command, you might have to run git-bash first (right clink on 'desktop' and select 'Git Bash Here' option).|
 
 Note: If GitHub usage is blocked via git protocol, you will need to set it up to use https instead. Following command will do the trick:
 
