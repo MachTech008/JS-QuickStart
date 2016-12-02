@@ -1,9 +1,7 @@
-Set up DynamoDB on your desktop!
+# DynamoDB Tutorial:
 
 [Source](https://gist.github.com/christianchang/699818b57469e1a175ff361e6cefce1f
 ): Team Member Christian Chang
-
-# DynamoDB Tutorial:
 
 ## Installing Amazon Command Line Interface
 
