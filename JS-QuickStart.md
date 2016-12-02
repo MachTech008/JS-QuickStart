@@ -10,23 +10,15 @@ REQUIREMENTS
 * Hard Drive: 250GB recommended
 * Operating System: Windows 7 or higher
 
-Overview:
-1. SET UP CHOCOLATEY
- * Chocolatey is the package manager for Windows. You'll use it to install various software componets on your workstation.
+1. Select the Windows and start menu, begin typing cmd.exe. This will search for the command prompt. 
 
-2. INSTALL THE SOFTWARE
+2. Right-click the Command Prompt to run cmd *as administrator* This will open a plain windows command line (cmd.exe) as administrator.
+
+3. Click "YES" to the resulting permission prompt.
+
+4. Copy and paste the commands in column 1 below into the command prompt window.
 
 <em> If you encounter any issues during the installation process check whether you are running cmd as administrator. Entering the chocolatey installation command in any kind of Unix shell will result in a failure. Be sure to use plain cmd.exe program for the installation. </em> <br>
-
-3. DOWNLOAD ARCHANIST <br>
-4. POST-INSTALLATION CONFIGURATION<br>
-5. INSTALL OPTIONAL SOFTWARE<br>
-
-* Select the In the Windows and start menu, start typing cmd.exe.
-* Right click it and select "Run as administrator".
-
-This will fire up a plain windows command line (cmd.exe) as administrator
-<em> Now you're ready to copy the following command into the command line.</em>
 
 | Command       | Result       |
 |:------------- |:-------------|
