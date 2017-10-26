@@ -22,7 +22,7 @@ REQUIREMENTS
 
 | Command       | Result       |
 |:------------- |:-------------|
-| `@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin` | This should download and setup chocolatey using powershell. |
+| `@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"` | This should download and setup chocolatey using cmd.exe. |
 | `choco --version` | Checks whether everything is working. You should see the current version of Chocolatey if the installation process finished successfully. |
 | `cinst -y git & refreshenv` | Installs GIT |
 | `cinst -y php --ignore-checksums & refreshenv` | Installs PHP (ignore-checksum flag required since feature was only left in configuration because previous choco had it according to "https://github.com/chocolatey/choco/issues/112".) |
